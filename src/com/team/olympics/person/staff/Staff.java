@@ -49,4 +49,19 @@ public abstract class Staff extends Person {
     public String toString() {
         return "abstract class Staff extends Person";
     }
+
+    /**
+     * work
+     */
+    public abstract void work();
+
+    /**
+     * rest
+     */
+    public abstract void rest();
+
+    /**
+     * feedback
+     */
+    public abstract void feedBack();
 }

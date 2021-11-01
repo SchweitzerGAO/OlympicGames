@@ -10,6 +10,21 @@ public class SafeguardStaff extends Staff {
         super(name, age, sex);
     }
 
+    @Override
+    public void work() {
+
+    }
+
+    @Override
+    public void rest() {
+
+    }
+
+    @Override
+    public void feedBack() {
+
+    }
+
     public int getStaffid() {
         return staffid;
     }
