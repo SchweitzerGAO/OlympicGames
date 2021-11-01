@@ -23,7 +23,7 @@ public class PrototypeTest {
 
 
         System.out.println("现将初始报名表克隆");
-        applicationform apl_new = new applicationform();
+        applicationform apl_new;
         apl_new = apl.clone();
 
         System.out.println("姓名："+apl_new.getName());
@@ -31,7 +31,7 @@ public class PrototypeTest {
         System.out.println("年龄："+apl_new.getAge());
         System.out.println("运动项目："+apl_new.getSprotEvent());
         System.out.println("                            ");
-        System.out.println("报名表是否为同一份"+(apl_new==apl));
+        System.out.println("报名表是否为同一份："+(apl_new==apl));
     }
 
     public static void main(String[] args){

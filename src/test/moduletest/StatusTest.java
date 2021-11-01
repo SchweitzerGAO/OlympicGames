@@ -3,6 +3,7 @@ package test.moduletest;
 import com.team.olympics.organizingcommittee.OrganizingCommittee;
 import com.team.olympics.player.SportPlayer;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class StatusTest {
@@ -15,22 +16,27 @@ public class StatusTest {
 
     public static void test()
     {
-        System.out.println("正在初始化运动员");
-        SportPlayer newPlayer = new SportPlayer();
+        try
+        {
+            System.out.println("正在初始化运动员");
+            SportPlayer newPlayer = new SportPlayer();
 
-        while (true) {
-            System.out.println("0:exit else:continue");
-            if(getNum()==0)
-                break;
-            System.out.println("请输入需要更改的状态值(-99~99):");
-            newPlayer.setStatus(getNum());
+            while (true) {
+                System.out.println("0:exit 1~9:continue");
+                if(getNum()==0)
+                    break;
+                System.out.println("请输入需要更改的状态值(-99~99):");
+                newPlayer.setStatus(getNum());
+            }
+        } catch (InputMismatchException e) {
+            System.out.println("非法输入，暂停测试...");
         }
     }
+
 
     public static int getNum()
     {
         Scanner sc = new Scanner(System.in);
-        int age = sc.nextInt();    //读取整型输入
-        return age;
+        return sc.nextInt();
     }
 }

@@ -19,7 +19,7 @@ public class SportPlayer extends Player{
         this.TiredStatus = new TiredStatus();
         this.CommonStatus = new CommonStatus();
         this.StrongStatus = new StrongStatus();
-        this.StatusNum = 75;
+        this.StatusNum = 50;
         this.updateStatus();
     }
     public SportPlayer(String name, String playGame,String nation) {

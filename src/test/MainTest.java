@@ -34,7 +34,7 @@ public class MainTest {
         System.out.println("**            17 --- Prototype                 **");
         System.out.println("**            18 --- Proxy                     **");
         System.out.println("**            19 --- Singleton                 **");
-        System.out.println("**            20 --- State                     **");
+        System.out.println("**            20 --- Status                    **");
         System.out.println("**            21 --- Strategy                  **");
         System.out.println("**            22 --- Template Method           **");
         System.out.println("**            23 --- Visitor                   **");
@@ -134,6 +134,7 @@ public class MainTest {
                     }
                     case 17:
                     {
+                        PrototypeTest.main(args);
                         break;
                     }
                     case 18:
@@ -147,6 +148,7 @@ public class MainTest {
                     }
                     case 20:
                     {
+                        StatusTest.main(args);
                         break;
                     }
                     case 21:
