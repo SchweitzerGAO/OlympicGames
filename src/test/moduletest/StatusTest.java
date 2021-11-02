@@ -6,6 +6,10 @@ import com.team.olympics.player.SportPlayer;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * @author Yang Wenjie
+ * @description test class for Status(state) Pattern
+ */
 public class StatusTest {
     public static void main(String[] args){
         System.out.println("--------------------------- Status ---------------------------------");
@@ -22,7 +26,7 @@ public class StatusTest {
             SportPlayer newPlayer = new SportPlayer();
 
             while (true) {
-                System.out.println("0:exit 1~9:continue");
+                System.out.println("0:exit; other digits: continue");
                 if(getNum()==0)
                     break;
                 System.out.println("请输入需要更改的状态值(-99~99):");

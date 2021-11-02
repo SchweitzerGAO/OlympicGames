@@ -162,6 +162,7 @@ public class MainTest {
                     }
                     case 23:
                     {
+                        VisitorTest.main(args);
                         break;
                     }
                     case 24:

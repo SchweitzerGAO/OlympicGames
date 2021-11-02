@@ -3,6 +3,10 @@ package test.moduletest;
 import com.team.olympics.applicationform.applicationform;
 import com.team.olympics.organizingcommittee.OrganizingCommittee;
 
+/**
+ * @author Yang Wenjie
+ * @description test class for Prototype Pattern
+ */
 public class PrototypeTest {
     private int count = 0;
 

@@ -2,9 +2,8 @@ package com.team.olympics.player;
 import com.team.olympics.Status.*;
 
 /**
- * @author Charles Gao
- * @description the player class(shall be abstract and extended in the future) temporarily used in IoC Pattern
- * @date 2021/10/25
+ * @author Yang Wenjie
+ * @description the player class
  */
 public class SportPlayer extends Player{
     private String name;

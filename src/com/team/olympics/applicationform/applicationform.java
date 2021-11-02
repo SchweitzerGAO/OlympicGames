@@ -2,6 +2,9 @@ package com.team.olympics.applicationform;
 
 import java.io.*;
 
+/**
+ * @author Yang Wenjie
+ */
 public class applicationform implements Cloneable{
     private String country;
     private String name;
@@ -47,7 +50,7 @@ public class applicationform implements Cloneable{
 
     public applicationform clone()
     {
-        Object obj = null;
+        Object obj;
         try{
             obj = super.clone();
             return (applicationform) obj;
@@ -58,8 +61,7 @@ public class applicationform implements Cloneable{
         }
     }
 
-    public applicationform deepClone() throws IOException,ClassNotFoundException, OptionalDataException
-    {
+    public applicationform deepClone() throws IOException,ClassNotFoundException {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         ObjectOutputStream os = new ObjectOutputStream(out);
         os.writeObject(os);
