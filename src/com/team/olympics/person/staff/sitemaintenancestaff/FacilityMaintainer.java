@@ -36,7 +36,7 @@ public class FacilityMaintainer extends Staff implements SiteMaintenanceStaff {
      */
     @Override
     public void visit(PublicArea s) {
-        s.getExhibitionsMaintained();
+
     }
 
 
@@ -52,7 +52,7 @@ public class FacilityMaintainer extends Staff implements SiteMaintenanceStaff {
 
     @Override
     public void visit(ExhibitionArea s) {
-
+        s.getExhibitionsMaintained();
     }
 
     /**
@@ -67,7 +67,7 @@ public class FacilityMaintainer extends Staff implements SiteMaintenanceStaff {
 
     @Override
     public void visit(SpectatorStand s) {
-
+        s.getDevicesMaintained();
     }
 
 }
