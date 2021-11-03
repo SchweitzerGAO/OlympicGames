@@ -9,9 +9,9 @@ package com.team.olympics.athlete;
 public class AmericanAthleteFactory extends AbstractAthleteFactory {
 
     private String[] names ={"Bob","Alen","Null","Pointer","Alex"};
-    private String[] skills={"run","swim","dance","sleep","dance"};
+    private Skill[] skills={new Run(),new Swim()};
     @Override
     public AbstractAthlete produce() {
-        return new AmericanAthlete(names[(int) (Math.random()*4)],skills[(int) (Math.random()*4)]);
+        return new AmericanAthlete(names[(int) (Math.random()*4)],skills[(int) (Math.random()*1)]);
     }
 }

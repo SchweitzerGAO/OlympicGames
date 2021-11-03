@@ -7,11 +7,11 @@ package com.team.olympics.athlete;
  */
 
 public class ChineseAthleteFactory extends AbstractAthleteFactory{
-    String[] names={"Li Na","Li Mao","Mei Mingzi","Xiao Ming","Xiao Hong"};
-    String[] skills={"run","swim","sleep","fly","code"};
+    private String[] names={"Li Na","Li Mao","Mei Mingzi","Xiao Ming","Xiao Hong"};
+    private Skill[] skills={new Run(),new Swim()};
 
     @Override
     public AbstractAthlete produce() {
-        return new ChineseAthlete(names[(int) (Math.random()*4)],skills[(int) (Math.random()*4)]);
+        return new ChineseAthlete(names[(int) (Math.random()*4)],skills[(int) (Math.random()*1)]);
     }
 }

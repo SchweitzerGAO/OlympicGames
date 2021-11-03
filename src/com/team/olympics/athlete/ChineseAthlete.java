@@ -7,7 +7,7 @@ package com.team.olympics.athlete;
  */
 
 public class ChineseAthlete extends AbstractAthlete{
-    public ChineseAthlete(String name, String skill) {
+    public ChineseAthlete(String name, Skill skill) {
         super(name, skill);
     }
 
