@@ -54,7 +54,7 @@ public class ExhibitionArea extends PublicArea{
      *
      * @param exhibitionName exhibit to be added to the area
      */
-    public void addExhibits(String exhibitionName) {
+    public void addExhibitions(String exhibitionName) {
         if (exhibitionList.contains(exhibitionName)) {
             System.out.println("Exhibits are already in the area.");
         } else {
@@ -67,7 +67,7 @@ public class ExhibitionArea extends PublicArea{
      *
      * @param exhibitionName exhibition to be removed
      */
-    public void removeExhibits(String exhibitionName) {
+    public void removeExhibitions(String exhibitionName) {
         if (exhibitionList.contains(exhibitionName)) {
             exhibitionList.remove(exhibitionName);
         } else {

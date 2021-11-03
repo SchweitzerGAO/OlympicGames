@@ -32,7 +32,6 @@ public abstract class PublicArea extends Site {
 
 
 
-
     /**
      * Visitor Pattern: accept a site maintenance staff to maintenance the scene
      *
