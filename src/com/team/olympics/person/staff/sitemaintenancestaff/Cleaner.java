@@ -5,6 +5,7 @@ import com.team.olympics.site.GameField;
 import com.team.olympics.site.publicarea.DiningRoom;
 import com.team.olympics.site.publicarea.ExhibitionArea;
 import com.team.olympics.site.publicarea.PublicArea;
+import com.team.olympics.site.publicarea.SpectatorStand;
 
 public class Cleaner extends Staff implements SiteMaintenanceStaff {
 
@@ -35,20 +36,15 @@ public class Cleaner extends Staff implements SiteMaintenanceStaff {
      * @param s public area site
      */
     @Override
-    public void visit(PublicArea s) {
-        s.getCleanUp();
-    }
+    public void visit(PublicArea s) {}
 
     @Override
-    public void visit(GameField s) {
-
-    }
+    public void visit(GameField s) {}
 
     @Override
     public void visit(ExhibitionArea s) {
-
+        s.getCleanUp();
     }
-
 
     /**
      * implement methods defined in interface to maintain the dining room
@@ -57,6 +53,11 @@ public class Cleaner extends Staff implements SiteMaintenanceStaff {
      */
     @Override
     public void visit(DiningRoom s) {
+        s.getCleanUp();
+    }
+
+    @Override
+    public void visit(SpectatorStand s) {
         s.getCleanUp();
     }
 

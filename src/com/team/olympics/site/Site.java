@@ -33,7 +33,7 @@ public abstract class Site {
 
 
     /**
-     * print a line to show that the scene is cleaned up
+     * print a line to show that the site is cleaned up
      */
     public void getCleanUp() {
         System.out.println("The " + toString() + " is cleaned up.");

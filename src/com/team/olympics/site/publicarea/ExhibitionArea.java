@@ -76,6 +76,13 @@ public class ExhibitionArea extends PublicArea{
     }
 
     /**
+     * maintain exhibits
+     */
+    public void getExhibitionsMaintained() {
+        System.out.println("The exhibitions in the exhibition area have been maintained.");
+    }
+
+    /**
      * Visitor Pattern: accept a site maintenance staff to maintain the site
      *
      * @param staff the site maintenance staff

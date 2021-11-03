@@ -31,12 +31,7 @@ public abstract class PublicArea extends Site {
     public abstract String toString();
 
 
-    /**
-     * maintain exhibits
-     */
-    public void getExhibitionsMaintained() {
-        System.out.println("The exhibitions in the exhibition area have been maintained.");
-    }
+
 
     /**
      * Visitor Pattern: accept a site maintenance staff to maintenance the scene
