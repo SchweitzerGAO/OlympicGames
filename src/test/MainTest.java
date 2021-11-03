@@ -1,6 +1,5 @@
 package test;
 
-import com.team.olympics.memento.Memento;
 import test.moduletest.*;
 
 import java.util.InputMismatchException;
@@ -82,6 +81,7 @@ public class MainTest {
                     }
                     case 5:
                     {
+                        ChainOfResponsibilityTest.main(args);
                         break;
                     }
                     case 6:
@@ -95,6 +95,7 @@ public class MainTest {
                     }
                     case 8:
                     {
+                        DecoratorTest.main(args);
                         break;
                     }
                     case 9:

@@ -159,7 +159,7 @@ public class DecoratorTest {
                         if (wPrinting > 1)
                             System.out.print(wPrinting + " word printings");
                         else if (wPrinting == 1)
-                            System.out.print("1 word printing");
+                            System.out.print(" 1 word printing");
 
                         if (p == 1)
                             System.out.print(", and you have selected a packing bag.");
