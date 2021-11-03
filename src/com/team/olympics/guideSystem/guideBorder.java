@@ -6,7 +6,9 @@ package com.team.olympics.guideSystem;
  * Describe:
  */
 public class guideBorder extends guideSystem{
-
+public String getLocation(){
+    return this.location;
+}
     @Override
     public void add(guideSystem guideSystem) {
     }

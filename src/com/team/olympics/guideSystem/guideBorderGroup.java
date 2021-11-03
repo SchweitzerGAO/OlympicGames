@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author: Gu HungJou
- * @date: 2021/11/1 13:18
+ * @author Gu HungJou
+ * @date 2021/11/1 13:18
  * Describe:
  */
 public class guideBorderGroup extends guideSystem{
-    private List<guideSystem> array=new ArrayList<>();
+    public List<guideSystem> array=new ArrayList<>();
 
     @Override
     public void add(guideSystem guideSystem) {
@@ -26,7 +26,7 @@ public class guideBorderGroup extends guideSystem{
         return array.get(i);
     }
 @Override
-    public void remove(int i) {
-        array.remove(i);
+    public void remove(guideSystem guide) {
+        array.remove(guide);
     }
 }
