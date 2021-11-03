@@ -11,7 +11,7 @@ import com.team.olympics.athlete.ChineseAthleteFactory;
  */
 
 public class AbstractFactoryTest {
-    public static void AbstractFactoryTest(){
+    public static void abstractFactoryTest(){
         //Producing one American athlete
         AmericanAthleteFactory americanAthleteFactory =new AmericanAthleteFactory();
         System.out.println("An AmericanAthleteFactory is built.");
@@ -32,13 +32,13 @@ public class AbstractFactoryTest {
     }
 
     public static void main(String[] args){
-        System.out.println("------------------------- Builder ----------------------------");
+        System.out.println("--------------------- AbstractFactory ------------------------");
         System.out.println("AmericanAthleteFactory():A class extending AbstractAthleteFactory");
         System.out.println("ChineseAthleteFactory():A class extending AbstractAthleteFactory");
         System.out.println("produce():Producing an athlete");
         System.out.println("intro():Introducing an athlete");
         System.out.println("speak():An method extending AbstractAthlete.speak()");
         System.out.println("-------------------------------------------------------------");
-        AbstractFactoryTest();
+        abstractFactoryTest();
     }
 }
