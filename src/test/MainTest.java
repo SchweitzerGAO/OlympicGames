@@ -63,6 +63,7 @@ public class MainTest {
                     }
                     case 1:
                     {
+                        AbstractFactoryTest.main(args);
                         break;
                     }
                     case 2:
@@ -89,6 +90,7 @@ public class MainTest {
                     }
                     case 7:
                     {
+                        CompositeTest.main(args);
                         break;
                     }
                     case 8:
@@ -120,6 +122,7 @@ public class MainTest {
                     }
                     case 14:
                     {
+                        MediatorTest.main(args);
                         break;
                     }
                     case 15:

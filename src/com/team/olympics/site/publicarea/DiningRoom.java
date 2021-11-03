@@ -12,10 +12,6 @@ public class DiningRoom extends PublicArea {
         super(location, maxNumber);
     }
 
-    public DiningRoom() {
-        this("Dining room",200);
-    }
-
     /**
      * @return name of the site as a String
      */
