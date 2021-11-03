@@ -6,6 +6,7 @@ import com.team.olympics.site.GameField;
 import com.team.olympics.site.publicarea.DiningRoom;
 import com.team.olympics.site.publicarea.ExhibitionArea;
 import com.team.olympics.site.publicarea.PublicArea;
+import com.team.olympics.site.publicarea.SpectatorStand;
 
 public class FacilityMaintainer extends Staff implements SiteMaintenanceStaff {
 
@@ -62,6 +63,11 @@ public class FacilityMaintainer extends Staff implements SiteMaintenanceStaff {
     @Override
     public void visit(DiningRoom s) {
         s.getDevicesMaintained();
+    }
+
+    @Override
+    public void visit(SpectatorStand s) {
+
     }
 
 }
