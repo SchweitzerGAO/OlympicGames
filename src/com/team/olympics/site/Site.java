@@ -9,35 +9,17 @@ public abstract class Site {
      */
     protected String location;
 
-    /**
-     * cost of this site, per year
-     */
-    protected double cost;
-
-    /**
-     * area of this site
-     */
-    protected double area;
-
-
-    public Site(String location, double cost, double area) {
+    public Site(String location) {
         this.location = location;
-        this.cost = cost;
-        this.area = area;
     }
 
 
     public Site() {
-        this("Default Location", 10000, 100);
+        this("Default Location");
     }
-
-    public Site(double cost) {
-        this("Default Location", cost, 100);
-    }
-
 
     /**
-     * @return name of the scene as a String
+     * @return name of the site as a String
      */
     @Override
     public abstract String toString();
@@ -50,35 +32,18 @@ public abstract class Site {
     }
 
 
-
     /**
-     * @return area of this site
-     */
-    public double getArea() {
-        return this.area;
-    }
-
-    /**
-     * the site may be expanded or reduced
-     *
-     * @param newArea the new area of this site
-     */
-    public void setArea(double newArea) {
-        this.area = newArea;
-    }
-
-    /**
-     * print a line to show that the scene is cleaned up
+     * print a line to show that the site is cleaned up
      */
     public void getCleanUp() {
         System.out.println("The " + toString() + " is cleaned up.");
     }
 
     /**
-     * Visitor Pattern: accept a utility worker to maintain the scene
+     * Visitor Pattern: accept a site maintenance staff to maintain the site
      *
-     * @param worker the utility worker
+     * @param staff the site maintenance staff
      */
-    public abstract void accept(SiteMaintenanceStaff worker);
+    public abstract void accept(SiteMaintenanceStaff staff);
 
 }
