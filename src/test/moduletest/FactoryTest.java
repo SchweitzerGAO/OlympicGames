@@ -6,12 +6,12 @@ import com.team.olympics.athlete.ChineseAthleteFactory;
 
 /**
  * @author Wu Fei
- * @description the test class for abstract factory pattern
+ * @description the test class for factory pattern
  * @date 2021/11/2
  */
 
-public class AbstractFactoryTest {
-    public static void abstractFactoryTest(){
+public class FactoryTest {
+    public static void factoryTest(){
         //Producing one American athlete
         AmericanAthleteFactory americanAthleteFactory =new AmericanAthleteFactory();
         System.out.println("An AmericanAthleteFactory is built.");
@@ -28,7 +28,7 @@ public class AbstractFactoryTest {
         System.out.println("He/She introduces himself/herself and speaks his/her language.");
         chinese1.intro();
         chinese1.speak();
-        System.out.println("-------------------AbstractFactoryTest ends-------------------");
+        System.out.println("-------------------FactoryTest ends-------------------");
     }
 
     public static void main(String[] args){
@@ -39,6 +39,6 @@ public class AbstractFactoryTest {
         System.out.println("intro():Introducing an athlete");
         System.out.println("speak():An method extending AbstractAthlete.speak()");
         System.out.println("-------------------------------------------------------------");
-        abstractFactoryTest();
+        factoryTest();
     }
 }
