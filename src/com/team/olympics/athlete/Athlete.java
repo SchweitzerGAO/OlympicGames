@@ -6,15 +6,15 @@ package com.team.olympics.athlete;
  * @date 2021/11/2
  */
 
-public abstract class AbstractAthlete {
+public abstract class Athlete {
     private String name;
-    private Skill skill;
+    protected Skill skill;
     public abstract void speak();
     public void intro(){
         System.out.println("My name is "+name+".I can "+skill+'.');
     }
     //constructor
-    public AbstractAthlete(String name,Skill skill){
+    public Athlete(String name, Skill skill){
         this.name=name;
         this.skill=skill;
     }
@@ -22,4 +22,5 @@ public abstract class AbstractAthlete {
     public void setSkill(Skill skill){
         this.skill=skill;
     }
+    public void play() {skill.play();}
 }

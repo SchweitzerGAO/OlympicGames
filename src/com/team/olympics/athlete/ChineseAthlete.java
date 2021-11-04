@@ -6,7 +6,7 @@ package com.team.olympics.athlete;
  * @date 2021/11/2
  */
 
-public class ChineseAthlete extends AbstractAthlete{
+public class ChineseAthlete extends Athlete {
     public ChineseAthlete(String name, Skill skill) {
         super(name, skill);
     }

@@ -7,5 +7,5 @@ package com.team.olympics.athlete;
  */
 
 public abstract class AbstractAthleteFactory {
-    public abstract AbstractAthlete produce();
+    public abstract Athlete produce();
 }

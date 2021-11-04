@@ -22,7 +22,7 @@ public class FlagFactory {
 
     //If the repository has the flag,we will get it.
     //Else,we will produce one.
-    public static Flag produce(String country){
+    public static Flag get(String country){
         switch (country){
             case "China":{
                 for (int i = 0; i < flags.size(); i++) {
