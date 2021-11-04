@@ -161,7 +161,7 @@ public class CompositeTest {
                 Thread.sleep(1500);
                 System.out.println();
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                System.out.println("未知异常，暂停测试...");
             }
             System.out.println("现在的指引牌组为:");
             if (borderGroup_Olympic.array.size() != 0)
@@ -173,7 +173,7 @@ public class CompositeTest {
                 Thread.sleep(1500);
                 System.out.println();
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                System.out.println("未知异常，暂停测试...");
             }
         }
     }
