@@ -104,11 +104,13 @@ public class MainTest {
                         break;
                     }
                     case 10:
-                    {
+                    case 21: {
+                        FactoryTest.main(args);  // Factory and Strategy Patterns are together
                         break;
                     }
                     case 11:
                     {
+                        FlyweightTest.main(args);
                         break;
                     }
                     case 12:
@@ -153,10 +155,6 @@ public class MainTest {
                     case 20:
                     {
                         StatusTest.main(args);
-                        break;
-                    }
-                    case 21:
-                    {
                         break;
                     }
                     case 22:
