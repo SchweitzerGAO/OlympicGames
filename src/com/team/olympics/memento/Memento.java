@@ -9,19 +9,12 @@ public class Memento {
         return time;
     }
 
-    public void setTime(double time) {
-        this.time = time;
-    }
-
     private double time;
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
     Memento(double time,String name){
         this.time=time;
         this.name=name;

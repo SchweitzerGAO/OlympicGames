@@ -40,8 +40,8 @@ public class MainTest {
         System.out.println("**            24 --- Dependency Injection      **");
         System.out.println("**            25 --- Criteria                  **");
         System.out.println("**            26 --- Null Object               **");
-        System.out.println("**            27 --- MVC                       **");
-        System.out.println("**            28 --- AOP                       **");
+        System.out.println("**            27 --- AOP                       **");
+        System.out.println("**            28 --- MVC                       **");
         System.out.println("-------------------------------------------------");
         System.out.print("Which design pattern do you want to test? [0 to quit]: ");
     }
@@ -71,6 +71,7 @@ public class MainTest {
                     }
                     case 2:
                     {
+                        AdapterTest.main(args);
                         break;
                     }
                     case 3:
@@ -90,6 +91,7 @@ public class MainTest {
                     }
                     case 6:
                     {
+                        CommandTest.main(args);
                         break;
                     }
                     case 7:
@@ -149,6 +151,7 @@ public class MainTest {
                     }
                     case 18:
                     {
+                        ProxyTest.main(args);
                         break;
                     }
                     case 19:
@@ -194,9 +197,9 @@ public class MainTest {
                     case 27:
                     {
                         try {
-                            MVCTest.main(args);
-                        } catch (InterruptedException e) {
-                            System.out.println("Unknown Interruption, Ending the test...");
+                            AOPTest.main(args);
+                        } catch (Exception e) {
+                            System.out.println("Exception: Ending the test");
                         }
                         break;
 
@@ -204,9 +207,9 @@ public class MainTest {
                     case 28:
                     {
                         try {
-                            AOPTest.main(args);
-                        } catch (Exception e) {
-                            System.out.println("Exception: Ending the test");
+                            MVCTest.main(args);
+                        } catch (InterruptedException e) {
+                            System.out.println("Unknown Interruption, Ending the test...");
                         }
                     }
                     default:

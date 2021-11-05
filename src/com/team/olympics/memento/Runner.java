@@ -5,9 +5,6 @@ package com.team.olympics.memento;
  * @description Runner class includes time and name,and provide method for createMemento and restoreMemento
  */
 public class Runner {
-    public double getTime() {
-        return time;
-    }
 
     public void setTime(double time) {
         this.time = time;
