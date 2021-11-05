@@ -3,7 +3,7 @@ package com.team.olympics.player;
 /**
  * CAUTION: This class is FINAL and is NOT extendable
  * @author Charles Gao
- * @description the player class(shall be abstract and extended in the future) temporarily used in IoC Pattern
+ * @description the player class(shall be abstract and extended in the future) temporarily used in DI Pattern
  * @date 2021/10/25
  */
 public final class DIPlayer {

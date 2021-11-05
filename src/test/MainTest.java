@@ -39,6 +39,7 @@ public class MainTest {
         System.out.println("**            23 --- Visitor                   **");
         System.out.println("**            24 --- Dependency Injection      **");
         System.out.println("**            25 --- Criteria                  **");
+        System.out.println("**            26 --- Null Object               **");
         System.out.println("**            27 --- MVC                       **");
         System.out.println("**            28 --- AOP                       **");
         System.out.println("-------------------------------------------------");
@@ -183,6 +184,11 @@ public class MainTest {
                     case 25:
                     {
                         CriteriaTest.main(args);
+                        break;
+                    }
+                    case 26:
+                    {
+                        NOTest.main(args);
                         break;
                     }
                     case 27:
