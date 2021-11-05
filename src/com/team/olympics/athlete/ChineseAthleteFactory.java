@@ -11,7 +11,7 @@ public class ChineseAthleteFactory extends AbstractAthleteFactory{
     private Skill[] skills={new Run(),new Swim()};
 
     @Override
-    public AbstractAthlete produce() {
+    public Athlete produce() {
         return new ChineseAthlete(names[(int) (Math.random()*4)],skills[(int) (Math.random()*1)]);
     }
 }

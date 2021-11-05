@@ -1,6 +1,6 @@
 package test.moduletest;
 
-import com.team.olympics.athlete.AbstractAthlete;
+import com.team.olympics.athlete.Athlete;
 import com.team.olympics.athlete.AmericanAthleteFactory;
 import com.team.olympics.athlete.ChineseAthleteFactory;
 
@@ -15,7 +15,7 @@ public class FactoryTest {
         //Producing one American athlete
         AmericanAthleteFactory americanAthleteFactory =new AmericanAthleteFactory();
         System.out.println("An AmericanAthleteFactory is built.");
-        AbstractAthlete american1= americanAthleteFactory.produce();
+        Athlete american1= americanAthleteFactory.produce();
         System.out.println("An American athlete is produced.");
         System.out.println("He/She introduces himself/herself and speaks his/her language.");
         american1.intro();
@@ -23,7 +23,7 @@ public class FactoryTest {
         //Producing one Chinese athlete
         ChineseAthleteFactory chineseAthleteFactory=new ChineseAthleteFactory();
         System.out.println("An ChineseAthleteFactory is built.");
-        AbstractAthlete chinese1=chineseAthleteFactory.produce();
+        Athlete chinese1=chineseAthleteFactory.produce();
         System.out.println("An Chinese athlete is produced.");
         System.out.println("He/She introduces himself/herself and speaks his/her language.");
         chinese1.intro();
@@ -37,7 +37,7 @@ public class FactoryTest {
         System.out.println("ChineseAthleteFactory():A class extending AbstractAthleteFactory");
         System.out.println("produce():Producing an athlete");
         System.out.println("intro():Introducing an athlete");
-        System.out.println("speak():An method extending AbstractAthlete.speak()");
+        System.out.println("speak():An method extending Athlete.speak()");
         System.out.println("-------------------------------------------------------------");
         factoryTest();
     }

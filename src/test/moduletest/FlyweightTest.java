@@ -12,12 +12,12 @@ import com.team.olympics.flag.FlagFactory;
 public class FlyweightTest {
     public static void flyweightTest(){
         //Produce three flags.
-        Flag flag1= FlagFactory.produce("China");
-        Flag flag2= FlagFactory.produce("USA");
-        Flag flag3= FlagFactory.produce("France");
+        Flag flag1= FlagFactory.get("China");
+        Flag flag2= FlagFactory.get("USA");
+        Flag flag3= FlagFactory.get("France");
         FlagFactory.give_back(flag1);
         //Should output the code of flag1.
-        Flag flag4= FlagFactory.produce("China");
+        Flag flag4= FlagFactory.get("China");
         System.out.println("----------------------FlyweightTest ends----------------------");
     }
 
