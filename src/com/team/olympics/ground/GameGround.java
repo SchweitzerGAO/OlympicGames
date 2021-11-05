@@ -18,8 +18,8 @@ import static com.team.olympics.person.Person.Sex.MALE;
  */
 public abstract class GameGround {
     private String type;
-    private String location;
-    private double size;
+    protected String location;
+    protected double size;
     private int due;
     private List<SafeguardStaff> safeguardStaffs;
     private Light lights;

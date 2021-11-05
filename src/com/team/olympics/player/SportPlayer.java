@@ -49,7 +49,7 @@ public class SportPlayer extends Player{
         else if(this.StatusNum<25){this.currentStatus = this.WeakStatus;}
         else if(this.StatusNum<50){this.currentStatus = this.TiredStatus;}
         else if(this.StatusNum<75){this.currentStatus = this.CommonStatus;}
-        else if(this.StatusNum<99){this.currentStatus = this.StrongStatus;}
+        else if(this.StatusNum<=99){this.currentStatus = this.StrongStatus;}
 
         this.display();
     }

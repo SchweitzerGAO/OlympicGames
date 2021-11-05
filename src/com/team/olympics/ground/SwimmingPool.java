@@ -22,4 +22,14 @@ public class SwimmingPool extends GameGround{
     public void setType() {
         this.setType("Swimming Pool");
     }
+
+    public SwimmingPool() {
+    }
+
+    public SwimmingPool(String location, double size)
+    {
+        this.setType();
+        this.location = location;
+        this.size = size;
+    }
 }

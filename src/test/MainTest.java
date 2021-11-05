@@ -33,11 +33,14 @@ public class MainTest {
         System.out.println("**            17 --- Prototype                 **");
         System.out.println("**            18 --- Proxy                     **");
         System.out.println("**            19 --- Singleton                 **");
-        System.out.println("**            20 --- Status                    **");
+        System.out.println("**            20 --- State                     **");
         System.out.println("**            21 --- Strategy                  **");
         System.out.println("**            22 --- Template Method           **");
         System.out.println("**            23 --- Visitor                   **");
         System.out.println("**            24 --- Dependency Injection      **");
+        System.out.println("**            25 --- Criteria                  **");
+        System.out.println("**            27 --- MVC                       **");
+        System.out.println("**            28 --- AOP                       **");
         System.out.println("-------------------------------------------------");
         System.out.print("Which design pattern do you want to test? [0 to quit]: ");
     }
@@ -104,8 +107,8 @@ public class MainTest {
                         break;
                     }
                     case 10:
-                    case 21: {
-                        FactoryTest.main(args);  // Factory and Strategy Patterns are together
+                    {
+                        FactoryTest.main(args);
                         break;
                     }
                     case 11:
@@ -157,6 +160,11 @@ public class MainTest {
                         StatusTest.main(args);
                         break;
                     }
+                    case 21:
+                    {
+                        StrategyTest.main(args);
+                        break;
+                    }
                     case 22:
                     {
                         TemplateTest.main(args);
@@ -171,6 +179,29 @@ public class MainTest {
                     {
                         DITest.main(args);
                         break;
+                    }
+                    case 25:
+                    {
+                        CriteriaTest.main(args);
+                        break;
+                    }
+                    case 27:
+                    {
+                        try {
+                            MVCTest.main(args);
+                        } catch (InterruptedException e) {
+                            System.out.println("Unknown Interruption, Ending the test...");
+                        }
+                        break;
+
+                    }
+                    case 28:
+                    {
+                        try {
+                            AOPTest.main(args);
+                        } catch (Exception e) {
+                            System.out.println("Exception: Ending the test");
+                        }
                     }
                     default:
                     {

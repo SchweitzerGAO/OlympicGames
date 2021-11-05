@@ -23,4 +23,13 @@ public class FieldTraceField extends GameGround{
     public void setType() {
         this.setType("Field Trace");
     }
+
+    public FieldTraceField() {
+    }
+    public FieldTraceField(String location, double size)
+    {
+        this.setType();
+        this.location = location;
+        this.size = size;
+    }
 }

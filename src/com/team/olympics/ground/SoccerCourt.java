@@ -22,4 +22,15 @@ public class SoccerCourt extends GameGround{
     public void setType() {
         this.setType("Soccer Court");
     }
+
+    public SoccerCourt() {
+    }
+
+    public SoccerCourt(String location, double size)
+    {
+        this.setType();
+        this.location = location;
+        this.size = size;
+    }
+
 }
